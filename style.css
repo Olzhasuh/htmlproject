@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color:   rgb(36, 35, 35);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+header img {
+    margin: 10px 30px;
+}
+
+header nav a {
+    margin: 20px;
+    text-decoration: none;
+    color:  white;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    background-image: url(images/orig.webp);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 900px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    z-index: 1;
+}
+
+/* Затемняющий слой */
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачность тёмного слоя */
+    z-index: 0;
+}
+
+/* Контент внутри .intro должен быть выше слоя затемнения */
+.intro > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.intro h1{
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.intro img {
+    width: 55%;
+}
+
+.img img{
+    width: 150px;
+    height: 100px;
+}
+
+.text button {
+    border-radius: 10px;
+    background-color: orange;
+    width: 150px;
+    height: 50px;
+    border-color:   orange;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.text {
+    display: flex;
+    background-color: white;
+    border-color: black;
+    border-radius: 20px;
+    width: 30%;
+    height: 300px;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header nav a:hover{
+    color: orange;
+}
+
+.text button:hover{
+    scale: 1.1;
+}
+
+.guide{
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(245, 55, 8);
+    font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+}
+
+.guidetxt{
+    color: black;
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    gap: 50px;
+    margin: 50px;
+}
+
+
+.bigpiece {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/i.webp);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    height: 700px;
+    width: 20%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.inbigpiece{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    font-size: 10px;
+}
+
+.txt{
+    font-size: 15px;
+}
+
+.fourpieces{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.upcolumn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.upcolumn > div, .lowcolumn > div{
+    display: flex;
+    width: 380px ;
+    height: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: end;
+}
+
+
+.fishing {
+    background-image: url(images/fishing.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.fishing:hover{
+    background-image: none;
+    background-color: rgb(210, 48, 48);
+}
+
+.camping {
+    background-image: url(images/camping.webp);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.camping:hover{
+    background-image: none;
+    background-color: rgb(210, 48, 48);
+}
+
+.trip {
+    background-image: url(images/tripi.webp);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.trip:hover{
+    background-image: none;
+    background-color: rgb(210, 48, 48);
+}
+
+.arts {
+    background-image: url(images/arts.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.arts:hover{
+  
+    background-image: none;
+    background-color: red;
+}
+
+.lowcolumn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.smallpiece {
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    background-image: url(images/road.webp);
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.smallpiece:hover {
+    background-image: none;
+    background-color: rgb(210, 48, 48);
+}
+
+.find {
+    position: relative; /* нужно для псевдоэлемента */
+    background-image: url(images/thirdblock.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 100px 0;
+}
+
+.find::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение */
+    z-index: 0;
+}
+
+/* Контент внутри должен быть выше затемнения */
+.find > * {
+    position: relative;
+    z-index: 1;
+}
+
+.thirdblock{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.ending {
+    padding: 20px;
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.ending a{
+    transition: 0.3s;
+}
+
+.ending a:hover{
+    scale: 1.1;
+}
+
+@media (max-width:1550px){
+    .text {
+        height: 430px;
+    }
+    .text .test{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1500px){
+    .inbigpiece{
+       height: 300px; 
+    }
+}
+
+@media (max-width: 1380px){
+    .inbigpiece{
+        height: 400px;
+    }
+}
+
+@media (max-width: 1235px){
+    .upcolumn > div, .lowcolumn > div{
+        width: 100%;
+    }
+}
+
+@media (max-width:1070px){
+    .text {
+        height: 550px;
+    }
+    .intro {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 830px){
+    .text{
+        height: 600px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .bigpiece{
+        width: 100%;
+    }
+    .smallpiece{
+        width: 70%;
+        height: 500px;
+    }
+    .upcolumn > div, .lowcolumn > div{
+        width: 30%;
+    }
+    
+}
+
+@media (max-width:580px){
+    .text{
+        width: 40%;
+        height: 700px;
+    }
+    .img{
+        display: flex;
+        flex-direction: column;
+    }
+}
